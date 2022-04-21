@@ -1,6 +1,8 @@
 import {useState} from "react"
 import RenderBarChart from "./RenderBarChart";
 import RenderLineChart from "./RenderLineChart";
+import StudentOverview from "./StudentOverview";
+
 
 
 const Home = () => {
@@ -14,8 +16,8 @@ const Home = () => {
   return (
     <div>
       <button onClick={toggleCharts}>Switch between charts</button>
-    {showChart ? <RenderBarChart/> : <RenderLineChart/>}
-    
+      {showChart ? <RenderBarChart/> : <RenderLineChart/>}
+    <StudentOverview/>
     </div>
   );
 };

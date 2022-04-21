@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Evelyn",
+    "email": "evelyn@wincacademy.nl",
+    "city": "Zwolle",
+    "avatar": "../img/evelyn.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Aranka",
+    "email": "aranka@wincacademy.nl",
+    "city": "Groningen",
+    "avatar": "../img/aranka.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Floris",
+    "email": "floris@wincacademy.nl",
+    "city": "Breda",
+    "avatar": "../img/floris.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Hector",
+    "email": "hector@wincacademy.nl",
+    "city": "Zoetermeer",
+    "avatar": "../img/hector.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Martina",
+    "email": "martina@wincacademy.nl",
+    "city": "Alkmaar",
+    "avatar": "../img/martina.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Maurits",
+    "email": "maurtis@wincacademy.nl",
+    "city": "Amsterdam",
+    "avatar": "../img/maurtis.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Rahima",
+    "email": "rahima@wincacademy.nl",
+    "city": "Rotterdam",
+    "avatar": "../img/rahima.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Sandra",
+    "email": "sandra@wincacademy.nl",
+    "city": "Emmen",
+    "avatar": "../img/sandra.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Wietske",
+    "email": "wietske@wincacademy.nl",
+    "city": "Zwolle",
+    "avatar": "../img/wietske.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Storm",
+    "email": "Storm@wincacademy.nl",
+    "city": "Amsterdam",
+    "avatar": "../img/storm.jpeg"
+  }
+]
