@@ -9,11 +9,11 @@ import "./css/App.css";
 function App() {
   return (
     <>
-      <Header />
-      <DataContextProvider>
+        <Header />
+        <DataContextProvider>
         <Home />
-      </DataContextProvider>
-      <Footer />
+        </DataContextProvider>
+        <Footer /> 
     </>
   );
 }

@@ -4,7 +4,6 @@ import RenderLineChart from "./RenderLineChart";
 import StudentOverview from "./StudentOverview";
 
 
-
 const Home = () => {
 
   const [showChart, setShowChart] = useState(true)

@@ -22,7 +22,7 @@ const RenderBarChart = () => {
     <div className="div-barchart">
       <button onClick={toggleDifficultyRating}>difficulty rating ON/OFF</button>
       <button onClick={toggleFunRating}>fun rating ON/OFF</button>
-      <BarChart width={1200} height={600} data={averageData}>
+      <BarChart width={1300} height={600} data={averageData}>
         <XAxis
           dataKey="course"
           textAnchor="end"

@@ -19,6 +19,7 @@ const DataContextProvider = ({ children }) => {
 
   // Array with allStudents, only the names
   const allStudents = [...new Set(data.map((item) => item.name))];
+  console.log(allStudents)
 
   // Arry with all the courses
   const allCourses = [...new Set(data.map((item) => item.course))];
