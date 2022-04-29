@@ -16,24 +16,29 @@ body {
   grid-row-gap: 20px;
 }
 
-/* Student */
+/* RenderStudent */
 
-.student-card{
+.student-card {
   display: flex;
   justify-content: space-around;
   background-color: rgb(156, 156, 236);
   border-radius: 20px;
 }
 
-.student-info-container{
+.student-info-container {
   margin-top: 5px;
   margin-bottom: 10px;
   margin-right: 40px;
 }
 
-.student-image{
+.student-image {
   width: 120px;
   margin-left: 30px;
   margin-top: 25px;
-  border-radius:20px;
+  border-radius: 20px;
+}
+
+.link-renderstudent{
+  text-decoration: none;
+  color: black;
 }

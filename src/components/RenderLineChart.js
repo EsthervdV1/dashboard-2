@@ -42,14 +42,14 @@ const RenderLineChart = () => {
         <Line
           type="monotone"
           dataKey="difficultyRating"
-          stroke="#8884d8"
+          stroke="#E2D1F9"
           activeDot={{ r: 8 }}
           hide={showDifficultyRating}
         />
         <Line 
           type="monotone" 
           dataKey="funRating" 
-          stroke="#82ca9d" 
+          stroke="#317773" 
           hide={showFunRating}
         />
       </LineChart>

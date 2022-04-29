@@ -5,7 +5,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 const RenderBarChart = () => {
   let averageData = useContext(DataContext);
   averageData = averageData.averageData;
-  //console.log(averageData);
 
   const [showDifficultyRating, setShowDifficultyRating] = useState(false)
   const [showFunRating, setShowFunRating] = useState(false)
@@ -35,8 +34,8 @@ const RenderBarChart = () => {
         <YAxis type="number" domain={[0, 4]} />
         <Tooltip />
         <Legend wrapperStyle={{ position: "relative", marginTop: "20px" }} />
-        <Bar dataKey="difficultyRating" fill="#8884d8" hide={showDifficultyRating}/>
-        <Bar dataKey="funRating" fill="#82ca9d" hide={showFunRating} />
+        <Bar dataKey="difficultyRating" fill="#E2D1F9" hide={showDifficultyRating}/>
+        <Bar dataKey="funRating" fill="#317773" hide={showFunRating} />
       </BarChart>
       </div>
   );
