@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
-const RenderStudent = ({ student }) => {
+const RenderStudentCard = ({ student }) => {
+
   return (
+  
     <Link to={student.name} className="link-renderstudent">
-      <div className="student-card">
+      <div className="student-card" >
         <div className="student-image-container">
           <img
             className="student-image"
@@ -22,4 +24,4 @@ const RenderStudent = ({ student }) => {
   );
 };
 
-export default RenderStudent;
+export default RenderStudentCard;

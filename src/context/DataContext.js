@@ -7,22 +7,28 @@ const DataContext = createContext()
 
 const DataContextProvider = ({children}) => {
   const [data, setData] = useState([])
-  const arrayOfAllStudents = [...new Set(data.map((item) => item.name))];
+  const arrayOfStudentNames = [...new Set(data.map((item) => item.name))];
+  // console.log(arrayOfStudentNames)
   const arrayOfAllCourses = [...new Set(data.map((item) => item.course))];
+
+   // ---------------------------------------------------------------------------
 
   useEffect(() => {
     d3.csv(CSVdata).then(setData);
   }, []);
 
+  // ---------------------------------------------------------------------------
+
   const makeAverageArray = () => {
     const newArray = [];
   
     arrayOfAllCourses.forEach((course) => {
-      let newObject = { name: "arrayOfAllStudents", course: course };
-
+      let newObject = { name: "student", course: course };
+      
+    // -------- Calulation for difficulty rating --------
       let arrayOfDifficultyRating = data
         .filter((item) => item.course === course)
-        .map((item) => item.difficultyRating);
+        .map((item) => item.difficultyRating)
 
       arrayOfDifficultyRating = arrayOfDifficultyRating.map((str) =>
         Number(str)
@@ -33,9 +39,11 @@ const DataContextProvider = ({children}) => {
       );
 
       averageOfDifficultyRating =
-        averageOfDifficultyRating / arrayOfAllStudents.length;
+        averageOfDifficultyRating / arrayOfStudentNames.length;
 
       newObject["difficultyRating"] = averageOfDifficultyRating;
+    
+      // -------- Calulation for fun rating --------
 
       let arrayOfFunRating = data
         .filter((item) => item.course === course)
@@ -47,7 +55,7 @@ const DataContextProvider = ({children}) => {
         (previousValue, currentValue) => previousValue + currentValue
       );
 
-      averageOfFunRating = averageOfFunRating / arrayOfAllStudents.length;
+      averageOfFunRating = averageOfFunRating / arrayOfStudentNames.length;
 
       newObject["funRating"] = averageOfFunRating;
 
@@ -59,9 +67,17 @@ const DataContextProvider = ({children}) => {
 
   const averageData = makeAverageArray();
 
+ // ---------------------------------------------------------------------------
+
+  const filterStudents = data.filter(item => {
+    return item.name === "Evelyn"
+  })
+
+  //console.log(filterStudents)
+
   return (
     <DataContext.Provider value={{ 
-        averageData
+        averageData, data
         }}>
       {children}
     </DataContext.Provider>

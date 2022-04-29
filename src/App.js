@@ -10,13 +10,14 @@ import ErrorPage from "./components/ErrorPage"
 import "./css/App.css";
 
 function App() {
+
   return (
     <Router>
         <Header />
         <DataContextProvider>
           <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="studentpage" element={<StudentPage/>}/>
+          <Route path="/:studentName" element={<StudentPage/>}/>
           <Route path="*" element={<ErrorPage/>}/>
         </Routes>
         </DataContextProvider>

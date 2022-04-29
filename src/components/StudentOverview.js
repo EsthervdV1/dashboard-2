@@ -1,5 +1,5 @@
 
-import RenderStudent from "./RenderStudent";
+import RenderStudentCart from "./RenderStudentCard";
 import studentData from "../data/student-data.json"
 
 const StudentOverview = () => {
@@ -7,7 +7,7 @@ const StudentOverview = () => {
   return (
       <div className="student-container">
         {studentData.map((student) => (
-          <RenderStudent key={student.id} student={student}/>
+          <RenderStudentCart key={student.id} student={student}/>
         ))}
       </div>
     
