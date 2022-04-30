@@ -1,0 +1,9 @@
+.student-container {
+  margin-left: 20px;
+  margin-bottom: 50px;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; */
+  }

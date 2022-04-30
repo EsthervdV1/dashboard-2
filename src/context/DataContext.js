@@ -69,12 +69,6 @@ const DataContextProvider = ({children}) => {
 
  // ---------------------------------------------------------------------------
 
-  const filterStudents = data.filter(item => {
-    return item.name === "Evelyn"
-  })
-
-  //console.log(filterStudents)
-
   return (
     <DataContext.Provider value={{ 
         averageData, data

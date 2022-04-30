@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../css/renderStudentCard.css"
 
 const RenderStudentCard = ({ student }) => {
 
@@ -17,7 +18,6 @@ const RenderStudentCard = ({ student }) => {
           <h3>{student.name}</h3>
           <p>Contact: {student.email}</p>
           <p>Woonplaats: {student.city}</p>
-          <button>Toon review</button>
         </div>
       </div>
     </Link>

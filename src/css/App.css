@@ -1,44 +1,7 @@
 body {
+  background-color: #FFE3DC;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* StudentOverview */
 
-.student-container {
-  margin-top: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-/* RenderStudent */
-
-.student-card {
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(156, 156, 236);
-  border-radius: 20px;
-}
-
-.student-info-container {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-right: 40px;
-}
-
-.student-image {
-  width: 120px;
-  margin-left: 30px;
-  margin-top: 25px;
-  border-radius: 20px;
-}
-
-.link-renderstudent{
-  text-decoration: none;
-  color: black;
-}

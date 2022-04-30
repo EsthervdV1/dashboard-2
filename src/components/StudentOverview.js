@@ -1,6 +1,7 @@
 
 import RenderStudentCart from "./RenderStudentCard";
 import studentData from "../data/student-data.json"
+import "../css/studentoverview.css"
 
 const StudentOverview = () => {
     

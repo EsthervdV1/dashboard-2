@@ -1,0 +1,12 @@
+.table{
+    margin-left: 100px;
+    border-collapse: collapse;
+}
+
+.th-table{
+    width: 50px;
+}
+
+td, th{
+    border: 1px solid #3a2d32;
+}

@@ -34,8 +34,8 @@ const RenderBarChart = () => {
         <YAxis type="number" domain={[0, 4]} />
         <Tooltip />
         <Legend wrapperStyle={{ position: "relative", marginTop: "20px" }} />
-        <Bar dataKey="difficultyRating" fill="#E2D1F9" hide={showDifficultyRating}/>
-        <Bar dataKey="funRating" fill="#317773" hide={showFunRating} />
+        <Bar dataKey="difficultyRating" fill="#D30c7b" hide={showDifficultyRating}/>
+        <Bar dataKey="funRating" fill="#3A2D32" hide={showFunRating} />
       </BarChart>
       </div>
   );
