@@ -1,9 +1,12 @@
-.student-container {
-  margin-left: 20px;
-  margin-bottom: 50px;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px; */
+
+  .studentoverview-container{
+    margin-top: 75px;
+    margin-left: 50px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    overflow: scroll;
   }
+
+  

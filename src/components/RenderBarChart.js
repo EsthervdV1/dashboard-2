@@ -1,31 +1,21 @@
-import { useContext, useState } from "react";
-import { DataContext } from "../context/DataContext";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
+// import { useContext } from "react";
+// import { DataContext } from "../context/DataContext";
 
-const RenderBarChart = () => {
-  let averageData = useContext(DataContext);
-  averageData = averageData.averageData;
+import averageData from "../functions/makeAverageArray";
+import { BarChart, Bar, XAxis, YAxis, Tooltip} from "recharts";
 
-  const [showDifficultyRating, setShowDifficultyRating] = useState(false)
-  const [showFunRating, setShowFunRating] = useState(false)
+const RenderBarChart = ({showDifficultyRating, showFunRating}) => {
 
-  const toggleDifficultyRating = () => {
-    setShowDifficultyRating(prevState => !prevState)
-  }
-
-  const toggleFunRating = () => {
-    setShowFunRating(prevState => !prevState)
-  }
+  // let averageData = useContext(DataContext);
+  // averageData = averageData.averageData;
 
   return (
-    <div className="div-barchart">
-      <button onClick={toggleDifficultyRating}>difficulty rating ON/OFF</button>
-      <button onClick={toggleFunRating}>fun rating ON/OFF</button>
+    <div className="div-renderchart">
       <BarChart width={1300} height={600} data={averageData}>
         <XAxis
           dataKey="course"
           textAnchor="end"
-          height={120}
+          height={150}
           interval={0}
           angle="-45"
           stroke="#000"
@@ -33,11 +23,18 @@ const RenderBarChart = () => {
         />
         <YAxis type="number" domain={[0, 4]} />
         <Tooltip />
-        <Legend wrapperStyle={{ position: "relative", marginTop: "20px" }} />
-        <Bar dataKey="difficultyRating" fill="#D30c7b" hide={showDifficultyRating}/>
-        <Bar dataKey="funRating" fill="#3A2D32" hide={showFunRating} />
+        <Bar
+          dataKey="difficultyRating"
+          fill="#a2ad91"
+          hide={showDifficultyRating}
+        />
+        <Bar 
+          dataKey="funRating" 
+          fill="#3A2D32" 
+          hide={showFunRating} 
+        />
       </BarChart>
-      </div>
+    </div>
   );
 };
 

@@ -1,0 +1,18 @@
+.button-difficult{
+    background-color: #a2ad91;
+    color: white;
+    border-radius: 20px;
+    height: 35px;
+    width: 120px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.button-fun{
+    background-color: #3a2d32;
+    color: white;
+    height: 35px;
+    width: 120px;
+    height: 35px;
+    border-radius: 20px;
+}
