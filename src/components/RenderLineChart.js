@@ -1,11 +1,6 @@
-import { useContext } from "react";
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
-import { DataContext } from "../context/DataContext";
 
-const RenderLineChart = ({showDifficultyRating, showFunRating}) => {
-  let averageData = useContext(DataContext);
-  averageData = averageData.averageData;
-
+const RenderLineChart = ({averageData, showDifficultyRating, showFunRating}) => {
 
   return (
     <div className="div-renderchart">

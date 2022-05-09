@@ -1,17 +1,22 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { DataContext } from "../context/DataContext";
 
 import RenderBarChart from "../components/RenderBarChart";
 import RenderLineChart from "../components/RenderLineChart";
 import Layout from "../components/Layout";
 import ToggleChartButtons from "../components/ToggleChartButtons";
+import StudentOverview from "../components/StudentOverview";
+import { makeAverageArray } from "../functions/makeAverageArray";
 
 import "../css/home.css";
-import StudentOverview from "../components/StudentOverview";
 
 const Home = () => {
+  const data = useContext(DataContext)
   const [showChart, setShowChart] = useState(true);
   const [showDifficultyRating, setShowDifficultyRating] = useState(false);
   const [showFunRating, setShowFunRating] = useState(false);
+ 
+  const averageData = makeAverageArray(data)
 
   const toggleCharts = () => {
     setShowChart((prevState) => !prevState);
@@ -45,11 +50,13 @@ const Home = () => {
           <RenderBarChart
             showDifficultyRating={showDifficultyRating}
             showFunRating={showFunRating}
+            averageData={averageData}
           />
         ) : (
           <RenderLineChart
             showDifficultyRating={showDifficultyRating}
             showFunRating={showFunRating}
+            averageData={averageData}
           />
         )}
         <StudentOverview />

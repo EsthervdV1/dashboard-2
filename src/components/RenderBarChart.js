@@ -1,13 +1,10 @@
-// import { useContext } from "react";
-// import { DataContext } from "../context/DataContext";
-
-import averageData from "../functions/makeAverageArray";
 import { BarChart, Bar, XAxis, YAxis, Tooltip} from "recharts";
 
-const RenderBarChart = ({showDifficultyRating, showFunRating}) => {
-
-  // let averageData = useContext(DataContext);
-  // averageData = averageData.averageData;
+const RenderBarChart = ({
+  averageData,
+  showDifficultyRating, 
+  showFunRating
+}) => {
 
   return (
     <div className="div-renderchart">

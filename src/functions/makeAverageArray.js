@@ -1,16 +1,9 @@
-import {DataContext} from "../context/DataContext"
-import {useContext} from "react"
-
-
-
-const makeAverageArray = () => {
-
-  let data = useContext(DataContext);
-  
-  const newArray = [];
+export const makeAverageArray = (data) => {
 
   const arrayOfStudentNames = [...new Set(data.map((item) => item.name))];
   const arrayOfAllCourses = [...new Set(data.map((item) => item.course))];
+
+  const newArray = [];
 
   arrayOfAllCourses.forEach((course) => {
     let newObject = { name: "student", course: course };
@@ -48,9 +41,12 @@ const makeAverageArray = () => {
     newObject["funRating"] = averageOfFunRating;
 
     newArray.push(newObject);
+    
   });
 
   return newArray;
+  //console.log(newArray)
 };
 
-export default makeAverageArray;
+
+

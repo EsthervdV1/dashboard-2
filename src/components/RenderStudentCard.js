@@ -1,13 +1,7 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { DataContext } from "../context/DataContext";
 import "../css/renderStudentCard.css"
 
 const RenderStudentCard = ({ student }) => {
-
-  const {
-    toggleTest
-  } = useContext(DataContext);
 
   return (
   
@@ -24,7 +18,7 @@ const RenderStudentCard = ({ student }) => {
           <h3>{student.name}</h3>
           <p>Contact: {student.email}</p>
           <p>Woonplaats: {student.city}</p>
-          <button onClick={toggleTest}>Test</button>
+          <button>Test</button>
         </div>
       </div>
     </Link>

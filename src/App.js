@@ -10,9 +10,9 @@ function App() {
   return (
     <DataContextProvider>
       <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </Router>
     </DataContextProvider>
   );
