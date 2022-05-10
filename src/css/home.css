@@ -4,17 +4,8 @@
 
 .container-home{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 1500px;
+    width: 1300px;
     margin-left: 50px;
     border-radius: 20px;
 }
 
-.button-chart{
-    background-color:  #d30c7b;
-    color: white;
-    height: 35px;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-}

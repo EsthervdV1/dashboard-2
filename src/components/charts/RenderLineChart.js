@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 const RenderLineChart = ({averageData, showDifficultyRating, showFunRating}) => {
 
   return (
-    <div className="div-renderchart">
+    <div>
       <LineChart width={1200} height={600} data={averageData}>
         <XAxis
           dataKey="course"

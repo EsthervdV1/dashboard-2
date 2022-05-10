@@ -1,10 +1,18 @@
-.header{
+.header-container{
     display: flex;
     justify-content: center;
     background-color: #DBB4AD;
     height:100px;
     margin-bottom: 30px;
+    width:100%;
   }
   
+.header-h1{
+  text-decoration: none;
+  color:black
+}
 
+.header-h1:hover{
+  color:#d30c7b;
+}
   

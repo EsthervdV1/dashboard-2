@@ -5,9 +5,9 @@ const RenderBarChart = ({
   showDifficultyRating, 
   showFunRating
 }) => {
-
+ 
   return (
-    <div className="div-renderchart">
+    <div>
       <BarChart width={1300} height={600} data={averageData}>
         <XAxis
           dataKey="course"

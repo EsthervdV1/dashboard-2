@@ -1,26 +1,28 @@
-.student-card {
-    display: flex;
-    justify-content: space-around;
-    background-color: #DBB4AD;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-  
-  .student-info-container {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    margin-right: 40px;
-    
-  }
-  
-  .student-image {
-    width: 120px;
-    margin: 20px;
-    border-radius: 20px;
-  }
-  
-  .link-renderstudent{
+.studentcard-link {
     text-decoration: none;
     color: black;
+  }
+
+  .studentcard-container{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #DBB4AD;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .studentcard-container:hover {
+    background-color: #d30c7b;
+  }
+    
+  .studentcard-avatar {
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 20px;
+  }
+  
+  .studentcard-info{
+    margin-left: 10px;
   }

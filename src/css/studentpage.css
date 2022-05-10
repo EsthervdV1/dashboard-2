@@ -1,12 +1,14 @@
 .studentpage-container{
-    margin-top: 75px;
-    margin-left: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     height:fit-content;
+    width: 1300px;
 }
 
 .h1-studentpage{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -15,6 +17,7 @@
     margin-right: auto;
     border-collapse: collapse;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 20px;
 }
 
 .tr-table {
@@ -31,5 +34,3 @@
 .th-table{
     width: 80px;
 }
-
-/* A2AD91 DBB4AD */

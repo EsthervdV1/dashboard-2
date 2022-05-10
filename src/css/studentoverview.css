@@ -1,12 +1,8 @@
-
-  .studentoverview-container{
-    margin-top: 75px;
-    margin-left: 50px;
-    width: 400px;
-    top: 0;
-    left: 0;
-    height: 1000px;
-    overflow: scroll;
-  }
-
-  
+.studentoverview-container {
+  display: flex;
+  width: 1300px;
+  overflow:scroll;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}

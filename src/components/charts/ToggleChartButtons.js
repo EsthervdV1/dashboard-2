@@ -1,5 +1,5 @@
 
-import "../css/toggleChartButtons.css";
+import "../../css/toggleChartButtons.css";
 
 const ToggleChartButtons = ({
   showDifficultyRating,
