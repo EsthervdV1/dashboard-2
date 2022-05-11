@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
+### if you get an error about d3 please run npm install d3. 
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
