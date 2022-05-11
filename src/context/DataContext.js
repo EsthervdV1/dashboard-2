@@ -11,17 +11,7 @@ const DataContextProvider = ({ children }) => {
     d3.csv(CSVdata).then(setData);
   }, []);
 
-//   console.log(data);
-
-// const filterOnStudentName = data.filter((item) => {
-//     return item.name === studentName;
-// });
-
-  return (
-  <DataContext.Provider value={data}>
-    {children}
-  </DataContext.Provider>
-  );
+  return <DataContext.Provider value={data}>{children}</DataContext.Provider>;
 };
 
 export { DataContext, DataContextProvider };

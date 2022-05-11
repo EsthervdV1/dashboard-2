@@ -1,10 +1,9 @@
 import { LineChart, Line, XAxis, YAxis, Tooltip } from "recharts";
 
-const RenderLineChart = ({averageData, showDifficultyRating, showFunRating}) => {
-
+const RenderLineChart = ({ showData, showDifficultyRating, showFunRating }) => {
   return (
     <div>
-      <LineChart width={1200} height={600} data={averageData}>
+      <LineChart width={1200} height={600} data={showData}>
         <XAxis
           dataKey="course"
           textAnchor="end"

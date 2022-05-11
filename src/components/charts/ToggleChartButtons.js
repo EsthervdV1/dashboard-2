@@ -1,14 +1,11 @@
-
 import "../../css/toggleChartButtons.css";
 
 const ToggleChartButtons = ({
   showDifficultyRating,
   showFunRating,
   toggleFunRating,
-  toggleDifficultyRating
+  toggleDifficultyRating,
 }) => {
-
-
   return (
     <>
       <button onClick={toggleDifficultyRating} className="button-difficult">

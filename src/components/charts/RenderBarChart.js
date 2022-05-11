@@ -1,15 +1,9 @@
-import { BarChart, Bar, XAxis, YAxis, Tooltip} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip } from "recharts";
 
-const RenderBarChart = ({
-  averageData,
-  showDifficultyRating, 
-  showFunRating,
-  studentData,
-}) => {
- 
+const RenderBarChart = ({ showData, showDifficultyRating, showFunRating }) => {
   return (
     <div>
-      <BarChart width={1300} height={600} data={averageData}>
+      <BarChart width={1300} height={600} data={showData}>
         <XAxis
           dataKey="course"
           textAnchor="end"
@@ -26,11 +20,7 @@ const RenderBarChart = ({
           fill="#a2ad91"
           hide={showDifficultyRating}
         />
-        <Bar 
-          dataKey="funRating" 
-          fill="#3A2D32" 
-          hide={showFunRating} 
-        />
+        <Bar dataKey="funRating" fill="#3A2D32" hide={showFunRating} />
       </BarChart>
     </div>
   );

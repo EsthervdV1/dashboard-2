@@ -3,14 +3,12 @@ import RenderBarChart from "./RenderBarChart";
 import RenderLineChart from "./RenderLineChart";
 import ToggleChartButtons from "./ToggleChartButtons";
 
-import"../../css/chartsOverview.css"
+import "../../css/chartsOverview.css";
 
-const ChartsOverview = ({averageData, studentData}) => {
-
+const ChartsOverview = ({ averageData, studentData, isStudent }) => {
   const [showChart, setShowChart] = useState(true);
   const [showDifficultyRating, setShowDifficultyRating] = useState(false);
   const [showFunRating, setShowFunRating] = useState(false);
-  //const [showData, setShowData] = useState({averageData})
 
   const toggleCharts = () => {
     setShowChart((prevState) => !prevState);
@@ -24,10 +22,6 @@ const ChartsOverview = ({averageData, studentData}) => {
     setShowFunRating((prevState) => !prevState);
   };
 
-  // const toggleData = () => {
-  //   setShowData((data)=> ({studentData}))
-  // }
-
   return (
     <div className="chartsOverview-container">
       <ToggleChartButtons
@@ -37,25 +31,19 @@ const ChartsOverview = ({averageData, studentData}) => {
         toggleDifficultyRating={toggleDifficultyRating}
       />
       <button onClick={toggleCharts} className="chartsOverview-button">
-        {showChart ? (
-          <span>Lijngrafiek</span>
-        ) : (
-          <span>Staafdiagram</span>
-        )}
+        {showChart ? <span>Lijngrafiek</span> : <span>Staafdiagram</span>}
       </button>
       {showChart ? (
         <RenderBarChart
           showDifficultyRating={showDifficultyRating}
           showFunRating={showFunRating}
-          averageData={averageData}
-          studentData={studentData}
-         
+          showData={isStudent === true ? studentData : averageData}
         />
       ) : (
         <RenderLineChart
           showDifficultyRating={showDifficultyRating}
           showFunRating={showFunRating}
-          averageData={averageData}
+          showData={isStudent === true ? studentData : averageData}
         />
       )}
     </div>

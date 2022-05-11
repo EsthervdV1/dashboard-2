@@ -6,6 +6,7 @@
     width: 120px;
     margin-right: 20px;
     margin-left: 50px;
+    cursor: pointer;
 }
 
 .button-fun{
@@ -15,4 +16,5 @@
     width: 120px;
     height: 35px;
     border-radius: 20px;
+    cursor:pointer;
 }

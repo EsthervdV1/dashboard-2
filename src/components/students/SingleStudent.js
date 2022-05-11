@@ -1,8 +1,6 @@
-
 import "../../css/studentpage.css";
 
-const SingleStudent = ({studentName, filterOnStudentName}) => {
-  
+const SingleStudent = ({ studentName, filterOnStudentName }) => {
   return (
     <div className="studentpage-container">
       <h1 className="h1-studentpage">{studentName}</h1>
