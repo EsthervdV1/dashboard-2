@@ -16,7 +16,7 @@ const StudentPage = () => {
 
   return (
     <Layout>
-      <ChartsOverview />
+      <ChartsOverview studentData={filterOnStudentName}/>
       <SingleStudent
         studentName={studentName}
         filterOnStudentName={filterOnStudentName}

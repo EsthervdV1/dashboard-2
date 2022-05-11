@@ -2,7 +2,7 @@ import { DataContextProvider } from "./context/DataContext";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 
-import Home from "./pages/HomePage";
+import HomePage from "./pages/HomePage";
 import StudentPage from "./pages/StudentPage";
 
 import "./css/App.css";
@@ -12,7 +12,7 @@ function App() {
     <DataContextProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/:studentName" element={<StudentPage/>}/>
         </Routes>
       </Router>

@@ -3,7 +3,8 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip} from "recharts";
 const RenderBarChart = ({
   averageData,
   showDifficultyRating, 
-  showFunRating
+  showFunRating,
+  studentData,
 }) => {
  
   return (
